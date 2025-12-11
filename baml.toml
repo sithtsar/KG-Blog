@@ -1,0 +1,4 @@
+[options]
+package = "baml_client"
+output_dir = "./baml_client"
+
