@@ -114,6 +114,10 @@ Then open your browser to: **http://localhost:8000**
 
 The visualization is interactive - you can zoom, pan, and hover over nodes to see details!
 
+## UI Demo
+
+![Knowledge Graph Extractor UI](docs/1.png)
+
 ## Viewing Results
 
 Open Neo4j Browser at http://localhost:7474 and run:
