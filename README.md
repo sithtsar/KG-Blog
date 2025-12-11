@@ -1,16 +1,24 @@
 # Knowledge Graph Extractor - Web App
 
+![Python](https://img.shields.io/badge/Python-3.13-blue.svg) ![License](https://img.shields.io/badge/License-MIT-green.svg) ![Neo4j](https://img.shields.io/badge/Neo4j-5.x-orange.svg)
+
 A simple, beautiful web application for extracting and visualizing knowledge graphs from unstructured text. Built with BAML (Boundary Abstract Model Language), Gemini 2.5 Flash, and Neo4j.
 
 ## Architecture
 
-```
-Unstructured Text → BAML Extraction → Structured Graph → Neo4j Database
+```mermaid
+flowchart TD
+    A[Unstructured Text<br/>URLs, PDFs, Files] --> B[Web App<br/>FastAPI]
+    B --> C[BAML Runtime<br/>Gemini 2.5 Flash]
+    C --> D[Structured Graph<br/>Nodes & Edges]
+    D --> E[(Neo4j Database)]
+    E --> F[Interactive Visualization<br/>Graph View]
 ```
 
 - **Input**: Unstructured web pages, PDFs, or text documents
 - **Processor**: BAML with Gemini 2.5 Flash for structured extraction
 - **Storage**: Neo4j graph database
+- **Interface**: Web-based visualization for exploring knowledge graphs
 
 ## Prerequisites
 
